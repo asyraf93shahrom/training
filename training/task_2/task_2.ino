@@ -6,8 +6,8 @@ ros::NodeHandle nh;  //All node info handle by ROS
 //======Encoder parameters==//
 
 //Encoder pin declare
-static int pinA = PE11; //D5
-static int pinB = PE9;  //D6
+static int pinA = 2; //D5
+static int pinB = 3;  //D6
 
 //Encoder variable declaration
 int pulsesChanged = 0;
