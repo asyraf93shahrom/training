@@ -1,7 +1,6 @@
 #include <ros.h>                 //compulsory to use this library when using ROS in arduino
 #include <geometry_msgs/Twist.h> //data type massage geometry (linear xyz & angular xyz)
 #include <geometry_msgs/Vector3Stamped.h>
-#include <std_msgs/String.h>
 
 ros::NodeHandle nh;  //All node info handle by ROS
 
