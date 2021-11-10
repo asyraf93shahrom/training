@@ -15,7 +15,7 @@ int pulses;
 int previous_pulse;
 int pulse_per_period;
 float rpm = 0;
-float resolution = 2000;
+float resolution = 3360;
 
 //=======time Looping=========//
 float time;
@@ -32,8 +32,8 @@ nh.getHardware()->setBaud(57600);
 
 pinMode(pinA, INPUT_PULLUP);
 pinMode(pinB, INPUT_PULLUP);
-attachInterrupt(pinA,A_CHANGE,CHANGE); 
-attachInterrupt(pinB,B_CHANGE,CHANGE);
+attachInterrupt(digitalPinToInterrupt(pinA),A_CHANGE,CHANGE); 
+attachInterrupt(digitalPinToInterrupt(pinB),B_CHANGE,CHANGE);
 
 time = millis(); 
 
